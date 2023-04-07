@@ -16,7 +16,6 @@
     "connect-mongo": "^4.6.0",
     "cors": "^2.8.5",
     "discord-oauth2": "^2.10.1",
-    "discord.js": "^14.6.0",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "eris": "^0.17.1",
