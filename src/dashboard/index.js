@@ -88,7 +88,7 @@ app.use(cors(corsOptions));
           'client_secret': process.env.CLIENT_SECRET,
           'grant_type': 'authorization_code',
           'code': code,
-          'redirect_uri': "https://api.gabrielly.website/callback"
+          'redirect_uri': "https://gaby-server.onrender.com/callback"
         })
       }
       let discord_res = await fetch('https://discord.com/api/oauth2/token', options).then((response) => {
@@ -352,7 +352,6 @@ app.use(cors(corsOptions));
             }
           });
           await Promise.all(promises);
-          console.log(info)
           res.json(info);
         }
       }
